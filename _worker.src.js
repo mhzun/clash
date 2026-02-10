@@ -1,9 +1,3 @@
-/**
- * YouTube  : https://youtube.com/@am_clubs
- * Telegram : https://t.me/am_clubs
- * GitHub   : https://github.com/amclubs
- * BLog     : https://amclubss.com
- */
 
 let id = base64Decode('ZWM4NzJkOGYtNzJiMC00YTA0LWI2MTItMDMyN2Q4NWUxOGVk');
 let uuid;
@@ -16,10 +10,9 @@ let socks5Enable = false;
 let parsedSocks5 = {};
 
 let ipLocal = [
-    'wto.org:443#youtube.com/@am_clubs 数字套利(视频教程)',
-    'icook.hk#t.me/am_clubs TG群(加入解锁更多节点)',
-    'time.is#github.com/amclubs GitHub仓库(关注查看新功能)',
-    '127.0.0.1:1234#amclubss.com 博客教程(cfnat)'
+    'mhzun.top:443#mhzun.top 魔幻尊官网丫',
+    'clashsub.mhzun.top#订阅器clashsub.mhzun.top',
+    'clash.mhzun.top#订阅配置clash.mhzun.top',
 ];
 
 const defaultIpUrlTxt = base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vZXhhbXBsZS9pcHY0LnR4dA==');
@@ -55,7 +48,7 @@ const protTypeBase64Tro = 'ZEhKdmFtRnU=';
 const httpPattern = /^http(s)?:\/\/.+/;
 let network = 'ws';
 let projectName = base64Decode('YW1jbHVicw==');
-let fileName = '5pWw5a2X5aWX5Yip';
+let fileName = '6a2U5bm75bCK';
 let ytName = base64Decode('aHR0cHM6Ly95b3V0dWJlLmNvbS9AYW1fY2x1YnM/c3ViX2NvbmZpcm1hdGlvbj0x');
 let tgName = base64Decode('aHR0cHM6Ly90Lm1lL2FtX2NsdWJz');
 let ghName = base64Decode('aHR0cHM6Ly9naXRodWIuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVs');
@@ -1000,7 +993,7 @@ async function getIpUrlTxtToArry(urlTxts) {
     return newIpTxt;
 }
 
-async function getIpUrlCsv(urlCsvs, tls) {
+fileNameasync function getIpUrlCsv(urlCsvs, tls) {
     if (!urlCsvs || urlCsvs.length === 0) {
         return [];
     }
@@ -1153,10 +1146,6 @@ function getConfigHtml(host, remark, v2, clash) {
     const header = `
         <div class="links">
             <div class="link-row">
-                <a href="${ytName}" target="_blank">🎬 YouTube</a>
-                <a href="${tgName}" target="_blank">💬 Telegram</a>
-                <a href="${ghName}" target="_blank">📂 GitHub</a>
-                <a href="${bName}" target="_blank">🌐 Blog</a>
                 <a href="https://${host}/${id}/ips" rel="noopener">⚡ 在线优选IP</a>
                 <a href="https://${host}/${id}/setting" rel="noopener">⚙️ 自定义设置</a>
             </div>
@@ -1482,12 +1471,6 @@ async function getSettingHtml(host) {
             <div class="navbar-left">
                 <button class="back-btn" onclick="goHome()">🏠 返回主页</button>
             </div>
-            <div class="navbar-right">
-                <a href="https://youtube.com/@am_clubs?sub_confirmation=1" target="_blank">🎬 YouTube</a>
-                <a href="https://t.me/am_clubs" target="_blank">💬 Telegram</a>
-                <a href="https://github.com/am-cf-tunnel" target="_blank">📂 GitHub</a>
-                <a href="https://amclubss.com" target="_blank">🌐 Blog</a>
-            </div>
         </div>
 
         <form id="configForm">
@@ -1769,16 +1752,6 @@ function renderPage({ base64Title, suffix = '', heading, bodyContent, ytName, tg
     <div class="login-container">
     <h1>${heading}</h1>
     ${bodyContent}
-    <div class="links">
-        <div class="link-row">
-            <a href="${ytName}" target="_blank">🎬 YouTube</a>
-            <a href="${tgName}" target="_blank">💬 Telegram</a>
-        </div>
-        <div class="link-row">
-            <a href="${ghName}" target="_blank">📂 GitHub</a>
-            <a href="${bName}" target="_blank">🌐 Blog</a>
-        </div>
-    </div>
     </div>
     </body>
     </html>`;
@@ -2311,12 +2284,6 @@ function htmlPage() {
     <div class="navbar">
         <div class="navbar-left">
             <button class="back-btn" onclick="goHome()">🏠 主页</button>
-        </div>
-        <div class="navbar-right">
-            <a href="https://youtube.com/@am_clubs?sub_confirmation=1" target="_blank">🎬 YouTube</a>
-            <a href="https://t.me/am_clubs" target="_blank">💬 Telegram</a>
-            <a href="https://github.com/am-cf-tunnel" target="_blank">📂 GitHub</a>
-            <a href="https://amclubss.com" target="_blank">🌐 Blog</a>
         </div>
     </div>
     <span id="cf-check" style="font-size:0.9em;"></span>
